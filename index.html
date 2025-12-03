@@ -2,56 +2,61 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 🔹 검색용 기본 제목 (40자 이내) -->
-    <title>JCK Innovation – LabVIEW 자동화 솔루션</title>
-
-    <!-- 🔹 검색용 설명 (80자 이내) -->
+    <!-- 기본 SEO -->
+    <title>JCK Innovation – LabVIEW 자동화 & 테스트 솔루션</title>
     <meta
       name="description"
-      content="LabVIEW 기반 자동화·계측 솔루션 전문 기업. 테스트 장비 개발 및 시스템 통합 서비스를 제공합니다."
+      content="JCK Innovation은 LabVIEW 기반 자동화 소프트웨어 개발과 맞춤형 계측·시험 시스템을 제공하는 전문 회사입니다. DAQ, SMU, DMM, 오실로스코프 연동 및 테스트 자동화에 특화되어 있습니다."
     />
 
-    <!-- 🔹 로봇 메타 태그 -->
-    <meta name="robots" content="index,follow" />
+    <!-- 정식 URL : /blog/ 로 설정 -->
+    <link rel="canonical" href="https://jck-innovation.github.io/blog/" />
 
-    <!-- 🔹 Open Graph -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ko_KR" />
     <meta
       property="og:title"
       content="JCK Innovation – LabVIEW Automation & Test Solutions"
     />
     <meta
       property="og:description"
-      content="LabVIEW 기반 자동화·계측 솔루션 개발 기업. 테스트 장비, DAQ, SMU, 오실로스코프 통합 지원."
+      content="Professional LabVIEW-based automation software and custom system instrument development. Creating tomorrow's key test solutions."
     />
     <meta
       property="og:url"
-      content="https://jck-innovation.github.io/"
+      content="https://jck-innovation.github.io/blog/"
     />
-    <meta property="og:site_name" content="JCK Innovation" />
+    <!-- 로고 이미지 경로는 실제 파일 위치에 맞게 유지 -->
     <meta
       property="og:image"
-      content="https://jck-innovation.github.io/favicon.png"
+      content="https://jck-innovation.github.io/assets/Main_logo_복사본_1764535319039-qU2978N9.png"
     />
 
     <!-- 파비콘 -->
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <!-- Vite 번들 CSS -->
-    <link rel="stylesheet" href="/assets/index-z2bBioff.css" />
+    <!-- 1차: 메타 리프레시로 /blog/ 자동 이동 -->
+    <meta http-equiv="refresh" content="0; url=/blog/" />
+
+    <!-- 2차: 자바스크립트로 보정 (메타 리프레시가 막힌 경우 대비) -->
+    <script>
+      (function () {
+        var target = "/blog/";
+        if (
+          location.pathname === "/" ||
+          location.pathname === "/index.html"
+        ) {
+          location.replace(target);
+        }
+      })();
+    </script>
   </head>
-
   <body>
-    <div id="root"></div>
-
-    <!-- Vite 번들 JS -->
-    <script type="module" src="/assets/index-DUqh1IM3.js"></script>
+    <p>
+      JCK Innovation 홈페이지로 이동 중입니다. 자동으로 이동하지 않으면
+      <a href="/blog/">여기</a>를 클릭해주세요.
+    </p>
   </body>
 </html>
-
